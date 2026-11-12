@@ -1,5 +1,4 @@
 # Clinic Cashbook
 
-Custom-domain build for https://saghi-center.online/.
-
-Built website only; source and financial records are not stored here.
+Built website for https://saghi-center.online/
+Application source and financial records are not stored in this repository.
