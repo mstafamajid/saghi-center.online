@@ -1,6 +1,6 @@
 {
-    "name": "Clinic Cashbook",
-    "short_name": "Clinic Cashbook",
+    "name": "DHF cashbook",
+    "short_name": "DHF cashbook",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#F8F5EF",
