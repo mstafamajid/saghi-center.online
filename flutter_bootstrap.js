@@ -35,8 +35,12 @@ if (!window._flutter) {
 }
 _flutter.buildConfig = {"engineRevision":"59aa584fdf100e6c78c785d8a5b565d1de4b48ab","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"},{}]};
 
-_flutter.loader.load({
-  serviceWorkerSettings: {
-    serviceWorkerVersion: "3248220268" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */
-  }
-});
+
+{
+  // The deployment build fills this path. Local Flutter runs use the app root.
+  const releasePath = "releases/7bae5c557f767a1353c3/";
+  const releaseBase = new URL(releasePath, document.baseURI).href;
+  _flutter.loader.load({
+    config: {entrypointBaseUrl: releaseBase, assetBase: releaseBase},
+  });
+}

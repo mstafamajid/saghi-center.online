@@ -16,6 +16,13 @@
   <title>DHF cashbook</title>
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+  <script>
+    // The hosting proxy can cache this script's fixed URL for hours.
+    const bootstrapUrl = new URL('flutter_bootstrap.js', document.baseURI);
+    bootstrapUrl.searchParams.set('release-check', String(Date.now()));
+    const bootstrapScript = document.createElement('script');
+    bootstrapScript.src = bootstrapUrl.href;
+    document.body.appendChild(bootstrapScript);
+  </script>
 </body>
 </html>
