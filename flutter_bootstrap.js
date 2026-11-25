@@ -38,7 +38,7 @@ _flutter.buildConfig = {"engineRevision":"59aa584fdf100e6c78c785d8a5b565d1de4b48
 
 {
   // The deployment build fills this path. Local Flutter runs use the app root.
-  const releasePath = "releases/7bae5c557f767a1353c3/";
+  const releasePath = "releases/93eb80557b6c3f2b1df6/";
   const releaseBase = new URL(releasePath, document.baseURI).href;
   _flutter.loader.load({
     config: {entrypointBaseUrl: releaseBase, assetBase: releaseBase},
